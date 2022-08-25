@@ -41,7 +41,7 @@ jobs:
       APP_NAME: ${{ secrets.APP_NAME }}
       HEROKU_API_KEY: ${{ a7b20e3c-23a9-4d87-9f51-c0aac82baed0 }}
       EMAIL: ${{ secrets.EMAIL }}
-      HEROKU_V2RAY_UUID: ${{ 8076cd52-2476-11ed-861d-0242ac120002 }}
+      HEROKU_V2RAY_UUID: ${{ 3f6c4543-d443-4a6c-abe7-1556f2c55e80 }}
       HEROKU_TUNNEL_TOKEN: ${{ secrets.HEROKU_TUNNEL_TOKEN }}
     steps:
       - run: |
