@@ -8,12 +8,12 @@ on:
         default: "deploy"
         required: true
       heroku-region:
-        description: "us 或者 eu. 如果你的app已经创建，切换到不同的region，需要先输入 actions 为 destroy 删除app"
-        default: "us"
+        description: "eu"
+        default: "eu"
         required: false
       heroku-app-name:
         description: "可选，如果输入，则会覆盖 Secrets 里面配置的 APP_NAME。"
-        default: ""
+        default: "test-s"
         required: false
       env:
         description: "environment: Input the name of Environment. If left blank, the main secrets setting will be used by default."
@@ -39,9 +39,9 @@ jobs:
     needs: jobenv
     env:
       APP_NAME: ${{ secrets.APP_NAME }}
-      HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      HEROKU_API_KEY: ${{ a7b20e3c-23a9-4d87-9f51-c0aac82baed0 }}
       EMAIL: ${{ secrets.EMAIL }}
-      HEROKU_V2RAY_UUID: ${{ secrets.HEROKU_V2RAY_UUID }}
+      HEROKU_V2RAY_UUID: ${{ 8076cd52-2476-11ed-861d-0242ac120002 }}
       HEROKU_TUNNEL_TOKEN: ${{ secrets.HEROKU_TUNNEL_TOKEN }}
     steps:
       - run: |
